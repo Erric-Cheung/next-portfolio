@@ -1,0 +1,132 @@
+.section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  justify-items: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  z-index: 10;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: fit-content;
+  position: relative;
+  text-shadow: rgba(255, 255, 255, 0.05) 0px 4px 8px,
+    rgba(255, 255, 255, 0.3) 0px 8px 30px;
+}
+
+.headline {
+  font-size: var(--font-3xl);
+  font-weight: 800;
+}
+
+.welcome-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.welcome-title {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1.5rem;
+  font-size: var(--font-xl);
+  font-weight: 300;
+}
+
+.connect-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.connect-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  border: solid;
+  border-radius: 1rem;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(100px);
+  box-shadow: 0 2px 0.5rem white;
+  transition: box-shadow 0.5s;
+}
+
+.connect-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 1rem white;
+}
+
+.button {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.button:hover {
+  color: white;
+}
+
+.eclipse {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.background {
+  z-index: 0;
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-top: 12rem;
+  }
+
+  .headline {
+    font-size: var(--font-5xl);
+  }
+}
+
+@media (min-width: 992px) {
+}

@@ -1,0 +1,44 @@
+.button-wrapper {
+  display: flex;
+
+  border: solid;
+  border-width: 1px;
+  border-radius: 2rem;
+  border-color: #ffffff30;
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  gap: 0.75rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+
+  color: rgb(240, 240, 240);
+  background: linear-gradient(
+    to right,
+    rgb(240, 240, 240) 50%,
+    rgba(0, 0, 0, 0.3) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s ease-out, color 0.5s ease-out;
+}
+
+.button:hover {
+  background-position: left center;
+  color: black;
+}
+
+.button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: var(--font-sm);
+  text-transform: uppercase;
+}

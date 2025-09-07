@@ -1,0 +1,94 @@
+.nav {
+  position: fixed;
+  z-index: 9999;
+  top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.tab-container {
+  position: relative;
+  display: inline-block; /* shrink-wraps the tab-list */
+}
+
+.tab-list {
+  position: relative;
+  display: flex;
+  list-style: none;
+  border: solid;
+  border-radius: 4rem;
+  border-width: 1px;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+  z-index: 1;
+}
+
+.tab-wrapper {
+  position: relative;
+  width: 100%;
+  font-size: var(--font-sm);
+  z-index: -1;
+}
+
+.tab {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border-width: 1px;
+  border-radius: 4rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+
+.active-tab:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.pill-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4rem;
+}
+
+.active-pill {
+  position: absolute;
+  inset: 0;
+}
+
+.bottom-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background-color: white;
+  padding-inline: 0.5rem;
+  border-radius: 4rem;
+  width: 50%;
+  transform: translateY(0.75rem);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgb(255, 255, 255) 70%
+  );
+}
+
+.bottom-glow {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  padding-inline: 0.5rem;
+  border-radius: 4rem;
+  width: 50%;
+  transform: translateY(0.75rem);
+  box-shadow: 0 0 10px #ffffff90;
+}

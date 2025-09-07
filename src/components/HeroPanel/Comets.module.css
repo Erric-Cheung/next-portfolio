@@ -1,0 +1,33 @@
+.comets {
+  /* position: relative; */
+  width: 100%;
+  /* height: 100%; */
+  /* height: 100vh; */
+  background-color: transparent;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+
+/* particle base */
+.comets span {
+  position: absolute;
+  top: -10px; /* start slightly above */
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+  animation: diagonalFall 1s linear infinite;
+}
+
+/* animate diagonal */
+@keyframes diagonalFall {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(200px, 600px); /* right + down */
+    /* opacity: 0; */
+  }
+}

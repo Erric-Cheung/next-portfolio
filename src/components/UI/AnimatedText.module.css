@@ -1,0 +1,39 @@
+.animated-text {
+  display: flex;
+  gap: .125rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.animated-text span {
+  display: inline-block;
+  color: inherit;
+  animation: fadeColor 5s infinite;
+}
+
+@keyframes fadeColor {
+  0% {
+    color: inherit;
+    text-shadow: none;
+  }
+  10% {
+    color: inherit;
+    text-shadow: none;
+  }
+  20% {
+    color: white;
+    text-shadow: rgba(255, 255, 255, 1) 0 0 4px,
+      rgba(255, 255, 255, 0.5) 0 0 32px;
+  }
+  30% {
+    color: inherit;
+    text-shadow: none;
+  }
+  100% {
+    color: inherit;
+    text-shadow: none;
+  }
+}
